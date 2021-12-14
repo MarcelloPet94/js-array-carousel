@@ -1,3 +1,4 @@
+
 const items = [
     'img/01.jpg',
     'img/02.jpg',
@@ -6,9 +7,22 @@ const items = [
     'img/05.jpg'
 ];
 
+let mainImgRepository = '';
+
+for (let count = 0; count < items.length; count++) {
+    mainImgRepository +=
+    `
+    <img src="${items[count]}" alt="">   
+    `
+}
+
+const mainContent = document.querySelector('.mainContent');
+mainContent.innerHTML = mainImgRepository;
+
 let itemsRepository = '';
 
 for (let count = 0; count < items.length; count++) {
+
 
     itemsRepository +=
     `
@@ -16,6 +30,7 @@ for (let count = 0; count < items.length; count++) {
         <img src="${items[count]}" alt="">
     </div>   
     `
+
 }
 
 const select = document.querySelector('.select');

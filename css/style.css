@@ -13,16 +13,19 @@
     background-color: chocolate;
 }   
 
+.mainContent {
+    width: 80%;
+    overflow: hidden;
+}
+
 .mainContent img {
     height: 25vw;
 }
 
-.mainContent {
-    width: 80%;
-}
-
-.select {
+.sectionSelect {
+    position: relative;
     width: 20%;
+    background-color: cornflowerblue;
 }
 
 .box-news {
@@ -34,4 +37,26 @@
 
 .box-news img {
     width: 100%;
+}
+
+/* arrow */
+
+.arrow {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    text-align: center;
+    font-size: 16px;
+}
+
+.top {
+    top: 8px;
+}
+
+.bottom {
+    bottom: 8px;
 }
