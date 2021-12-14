@@ -14,12 +14,27 @@
 }   
 
 .mainContent {
+    position: relative;
     width: 80%;
     overflow: hidden;
 }
 
 .mainContent img {
     height: 25vw;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.textBox {
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    text-align: right;
+    color: #fff;
 }
 
 .sectionSelect {
