@@ -6,7 +6,7 @@ const items = [
     'img/04.jpg',
     'img/05.jpg'
 ];
-
+// immagine grande
 let mainImgRepository = '';
 
 for (let count = 0; count < items.length; count++) {
@@ -15,7 +15,7 @@ for (let count = 0; count < items.length; count++) {
     <img src="${items[count]}" alt="">   
     `
 }
-
+// immagini slider destra
 const mainContent = document.querySelector('.mainContent');
 mainContent.innerHTML = mainImgRepository;
 
@@ -32,6 +32,12 @@ for (let count = 0; count < items.length; count++) {
     `
 
 }
-
+// freccie
 const select = document.querySelector('.select');
 select.innerHTML = itemsRepository;
+
+const arrow = document.querySelector('.arrow');
+
+arrow.addEventListener ('click', function() {
+    console.log("slide top");
+})
